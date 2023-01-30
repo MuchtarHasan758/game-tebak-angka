@@ -1,0 +1,121 @@
+@desktop: ~"only screen and (min-width: 960px) and (max-width: 1366px)";
+@tablet: ~"only screen and (min-width: 720px) and (max-width: 959px)";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+.para-one {
+  font-size: 24px;
+  margin: 10px auto;
+  text-align: center;
+  @media @desktop {
+    font-size: 40px;
+    margin: 70px auto;
+  }
+  @media @tablet {
+    margin: 60px auto;
+    font-size: 36px;
+  }
+}
+
+.secret-number {
+  width: 150px;
+  height: 150px;
+  font-size: 64px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px dotted red;
+  border-radius: 80px;
+  @media @desktop {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    font-size: 104px;
+    margin: 90px auto;
+  }
+  @media @tablet {
+    width: 185px;
+    height: 185px;
+    border-radius: 100px;
+    margin: 80px auto;
+    font-size: 84px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10%;
+}
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 200px;
+  align-items: center;
+  gap: 20px;
+  input {
+    width: 85%;
+    height: 10vh;
+    font-size: 35px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    @media @desktop {
+      width: 60%;
+      height: 20vh;
+    }
+    @media @tablet {
+      width: 80%;
+      height: 12vh;
+    }
+  }
+  .check {
+    margin: 20px auto;
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 800;
+    text-shadow: 0 0 1px black;
+    border-radius: 20px;
+    background-color: aqua;
+    color: #222;
+    cursor: pointer;
+    @media @desktop {
+      width: 40%;
+      height: 15vh;
+    }
+    @media @tablet {
+      width: 60%;
+      height: 10vh;
+    }
+  }
+}
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 40%;
+  height: 200px;
+  p {
+    font-size: 20px;
+    @media @tablet {
+      font-size: 28px;
+    }
+    @media @desktop {
+      font-size: 30px;
+    }
+  }
+}
