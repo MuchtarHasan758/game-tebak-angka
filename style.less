@@ -4,11 +4,20 @@
 * {
   box-sizing: border-box;
   padding: 0;
+  text-shadow: 0 0 1px black;
+  color: black;
+}
+
+body {
+  background-color: green;
+  background-size: cover;
 }
 
 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 10px;
+  font-size: 30px;
 }
 
 .para-one {
@@ -17,15 +26,30 @@ h1 {
   text-align: center;
   @media @desktop {
     font-size: 40px;
-    margin: 70px auto;
+    margin: 30px auto;
   }
   @media @tablet {
-    margin: 60px auto;
+    margin: 20px auto;
     font-size: 36px;
   }
 }
 
+.para-two {
+  font-size: 14px;
+  margin: 10px auto;
+  text-align: center;
+  @media @desktop {
+    font-size: 24px;
+    margin: auto;
+  }
+  @media @tablet {
+    margin: auto;
+    font-size: 22px;
+  }
+}
+
 .secret-number {
+  background-color: rgb(245, 211, 21);
   width: 150px;
   height: 150px;
   font-size: 64px;
@@ -33,7 +57,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px dotted red;
   border-radius: 80px;
   @media @desktop {
     width: 200px;
@@ -48,6 +71,10 @@ h1 {
     border-radius: 100px;
     margin: 80px auto;
     font-size: 84px;
+  }
+  .nomor {
+    background-color: inherit;
+    color: #222;
   }
 }
 
@@ -69,7 +96,7 @@ h1 {
     height: 10vh;
     font-size: 35px;
     text-align: center;
-    border: 2px solid black;
+    border: 8px solid silver;
     border-radius: 25px;
     @media @desktop {
       width: 60%;
@@ -100,6 +127,26 @@ h1 {
       height: 10vh;
     }
   }
+  .reset {
+    display: none;
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 800;
+    text-shadow: 0 0 1px black;
+    border-radius: 20px;
+    background-color: limegreen;
+    color: #222;
+    cursor: pointer;
+    @media @desktop {
+      width: 40%;
+      height: 15vh;
+    }
+    @media @tablet {
+      width: 60%;
+      height: 10vh;
+    }
+  }
 }
 
 .section-two {
@@ -112,10 +159,10 @@ h1 {
   p {
     font-size: 20px;
     @media @tablet {
-      font-size: 28px;
+      font-size: 24px;
     }
     @media @desktop {
-      font-size: 30px;
+      font-size: 24px;
     }
   }
 }

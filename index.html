@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1 class="header-one">Hi, Mari kita bermain Tebak Angka</h1>
+    <h1 class="header-one">
+      <span class="greeting-name">Hi</span>, Mari kita bermain Tebak Angka
+    </h1>
     <p class="para-one">Tebak Angka di bawah ini</p>
-    <div class="secret-number">?</div>
+    <p class="para-two">(Antara 1 sampai 40)</p>
+    <div class="secret-number"><span class="nomor">?</span></div>
     <div class="flex-container">
       <div class="section-one">
-        <input type="number" name="user-input" id="user-input" />
+        <input type="number" name="tebakan" id="tebakan" />
         <button class="check">Submit</button>
+        <button class="reset">Reset</button>
       </div>
       <div class="section-two">
         <p class="pesan">Silahkan submit nomor...</p>
